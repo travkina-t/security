@@ -1,0 +1,204 @@
+
+
+div.background {
+  background: url(wheat.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.7;
+}
+
+ div.transbox.other{
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+} 
+
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+  opacity: 0.7;
+}
+
+
+
+.date {
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+img {
+  width: 100%;
+
+}
+
+.slider {
+    max-width: 100rem;
+    height: 40rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  
+  
+    /* IN THE END */
+    /*overflow: hidden;*/
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 85%;
+    height: 40rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8%;
+    font-size: 30px;
+    font-weight: 600;
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+  
+  .slide > img {
+    /* Only for images that have different size than slide */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+  }
+  
+  .slider__btn--left {
+    left: 4%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slider__btn--right {
+    right: 4%;
+    transform: translate(50%, -50%);
+  }
+
+
+.stat {
+    position: relative;
+    left:83%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -1px -1px #000;
+    user-select: none;
+    padding: .8em 2em;
+    outline: none;
+    background-color: #000;
+    background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto;
+    background-position: 200% 0, 0 0;
+    box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+  } 
+  .stat:active {
+    top: 1px;
+    box-shadow: none;
+  }
+    .stat:hover{
+    transition: .5s linear;
+    background-position: -200% 0, 0 0;
+    cursor: pointer;
+  } 
+
+  .zp {
+    position: relative;
+    left:-8%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -1px -1px #000;
+    user-select: none;
+    padding: .8em 2em;
+    outline: none;
+    background-color: #000;
+    background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto;
+    background-position: 200% 0, 0 0;
+    box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+  }
+
+  #zp {
+    position: relative;
+    left:3%;
+    opacity: 0.6;
+  }
+  
+  .zp:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0;
+    cursor: pointer;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+  }
+
+  th {
+    color: black;
+    background-color: #E6E6E6;
+  }
+
+
+  .tab {
+    position: relative;
+    left: 0%;
+  }
+
+  .math {
+    display: inline;
+    float: left;
+    padding: 2%;
+    margin-left: 16%;
+    font-size: 18px;
+    
+  }
+
+  .info {
+    display: inline;
+    float: left;
+    padding:2%;
+    margin-left: 10%;
+    
+  }
+
+select {
+  font-size: 14px;
+}
