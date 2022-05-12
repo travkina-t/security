@@ -49,10 +49,8 @@ const nav = document.querySelector('#navbar');
 const initialCoords = about.getBoundingClientRect();
 
 window.addEventListener('scroll', function() {
-  console.log('ns yf ghfd');
 
   if(this.window.scrollY >= initialCoords.top) {
-    console.log('fkkf');
     nav.style.zIndex='20';
   }
   else {
@@ -137,12 +135,6 @@ else if (date3 === date || daysPressed3 % 3 ===0) {
 
 
 
-  
-
-
-
-
-
 //Slider
 
 
@@ -216,22 +208,10 @@ const goToSlide = function (slide) {
 
 const month = date.getMonth();
 
-
-
-//Рассчитать зарплату
-
-//Отображение зарплаты
-
-
-
 let f = form.value;
-console.log(f);
 let m = formMonth.value;
-console.log(m);
-
 
 let dateZp = new Date(2022, `${m}`,1);
-
 
 
 const options2 = {
