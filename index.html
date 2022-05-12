@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <header class="ekoza">
+    <div id="navbar" class="navbar">
+      <div class="logo">
+        <h2><span class="text-primary">ЭКО</span>КРАЙ</h2>
+      </div>
+  
+      <nav>
+        <ul>
+
+          <li><a  href="#about">О КОМПАНИИ</a></li>
+          <li><a href="#zp">РАССЧИТАТЬ ЗАРПЛАТУ</a></li>
+          <li><a  href="#info">ИНФОРМАЦИЯ О СОТРУДНИКАХ</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div id='content' class="content">
+      <h1>Cотрудники службы охраны</h1>
+      <p>Охранный объект: <span class="text-primary">Краснознаменка</span></p>
+      <div class="date"></div>
+      <div class='slider'>
+        <div class='slide cur__guar'></div>
+        <div class='slide cur__guar2'></div>
+        <div class='slide cur__guar3'></div>
+        <div class='slide cur__guar4'></div>
+        <div class='slide cur__guar5'></div>
+        
+      </div>
+      <button class='slider__btn slider__btn--left'>&larr;</button>
+        <button class='slider__btn slider__btn--right'>&rarr;</button>
+      
+    
+        
+    
+    
+  </div>
+
+  <section id='about' class="about flex-columns">
+    <div class="row">
+      <div class="column">
+        <div class="column-1">
+          <img src="about.jpg" alt="" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-2">
+          <h1>О компании "<span class="text-primary">Эко</span>край"</h1><p>Компания "Экокрай" занимается выращиванием зерновых и технических культур в степной части Крыма. Предприятие также выращивает миндаль и виноград. Урожайность зависит от погодных условий, так как климат в Крыму переменчивый. Засуха может сменяться продолжительными дождями, что влияет на качество и количество всходов.</p>
+          <p>Сотрудники службы охраны работают на территории с многочисленными складами. В течение каждой смены они регулярно осматривают территорию, контролируют запрет на вход посторонних и составляют отчеты о текущей обстановке.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  
+  <section class="image flex-columns">
+    <div class="row">
+      <div class="column">
+          <img class='ones' src="one .jpg" alt="" />
+      </div>
+      <div class="column">
+        <img class='ones' src="two.jpg" alt="" />
+      </div>
+      <div class="column">
+        <img class='ones' src="three.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="zp">
+    <div class="container">
+      <h1> Расcчет зарплаты за <select name='month' id="month">
+        <option value="0">январь</option>
+        <option value="1">февраль</option> 
+        <option value="2">март</option> 
+        <option value="3">апрель</option> 
+        <option value="4">май</option> 
+        <option value="5">июнь</option> 
+        <option value="6">июль</option> 
+        <option value="7">август</option> 
+        <option value="8">сентябрь</option> 
+        <option value="9">октябрь</option> 
+        <option value="10">ноябрь</option>
+        <option value="11">декабрь</option>   
+      </select> месяц 2022 года</h1>
+      <label for='guard'>Охранник</label>
+    <select name ='guard' id='guard'>
+        <option value = 'Василия Ивановича'>Василий Иванович</option>
+        <option value = 'Петра Романовича'>Петр Романович</option>
+        <option value = 'Вадима Михайловича'>Вадим Михайлович</option>
+    </select>
+    <br>
+
+    <button class = 'zp'>Расcчитать</button>
+
+    <br>
+    <br>
+
+    <div class='hide'></div>
+
+    </div>
+    
+    
+
+  </section >
+
+  <section id="info">
+   
+      <h1 style="color: #333">Информация о cотрудниках</h1>
+      <div class="info">
+      <div class="columns dop">
+        <h3>Василий Иванович</h3>
+        <p>+7 (978) 111-11-11</p>
+      </div>
+      <div class="columns">
+        <h3>Петр Романович</h3>
+        <p>+7 (978) 111-11-11</p>
+      </div>
+      <div class="columns dop">
+        <h3>Вадим Михайлович</h3>
+        <p>+7 (978) 111-11-11</p>
+          </div>
+
+
+    </div>
+    
+   
+
+
+  </section>
+
+  
+
+
+
+  </header>
+
+  
+    
+
+</body>
+</html>
