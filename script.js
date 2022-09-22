@@ -140,6 +140,7 @@ else if (date3 === date || daysPressed3 % 3 ===0) {
 
 let curSlide = 0;
 const maxSlide = slides.length;
+const slider = document.querySelector('.slider');
 
 
 const goToSlide = function (slide) {
@@ -162,10 +163,12 @@ const goToSlide = function (slide) {
   const nextSlide = function () {
     if (curSlide >= maxSlide - 3) {
       curSlide = 0;
-      console.log(curSlide);
-    } else {
-        console.log(curSlide);
+      slider.style.flexDirection = "column";
+    } else if(curSlide===3) {
       curSlide++;
+    }else{
+      curSlide++;
+      slider.style.flexDirection = "column";
 
     }
   
@@ -179,13 +182,14 @@ const goToSlide = function (slide) {
   const prevSlide = function () {
     if (curSlide === 0) {
       curSlide = maxSlide-1;
-      console.log(curSlide)
+      slider.style.flexDirection = "column-reverse";
     } else if(curSlide ===3 ) {
       curSlide = 0;
+      slider.style.flexDirection = "column";
     }
       else {
       curSlide--;
-      console.log(curSlide)
+ 
     }
   
     goToSlide(curSlide);
